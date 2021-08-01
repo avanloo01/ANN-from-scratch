@@ -79,7 +79,7 @@ def guess(r, g, b):
     finalLayer = sigmoid(finalZ)
 
     finalList = np.reshape(finalLayer, (1,2)).tolist()
-    #return finalList
+
     if(finalList[0][0] > finalList[0][1]):
         return "White text"
     else:
